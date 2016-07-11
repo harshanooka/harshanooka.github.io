@@ -2,24 +2,32 @@ body {
   margin: 0px 0px;
   width: 100%;
   height: 100%;
+  font-size: 18px
 }
 .navbar-custom {
   margin: 0px 0px;
   background-color: white;
-  min-height: 50px;
+  height: 50px;
   text-transform: uppercase;
   border-bottom: #59A5D8 3px solid;
 }
 .navbar-custom li a {
   color: grey;
-  font-size: 17px;
+  font-size: 0.9em;
 }
 .navbar-custom .navbar-brand {
-  font-size: 24px;
+  font-size: 1.4em;
   font-family: 'Roboto', sans-serif;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #59A5D8
+}
+.navbar-custom .navbar-toggle span {
+  background-color: black;
 }
 #intro {
   position: absolute;
+  top: 50px;
   background: rgba(0, 0, 0, 0.7) url('../images/hero2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,8 +35,7 @@ body {
   min-height: 100%;
 }
 #intro .header-content-wrap {
-  position: absolute;
-  top: 20%;
+  margin-top: 50px;
   width: 100%;
 }
 #intro .header-content {
@@ -40,7 +47,7 @@ body {
 #intro .header-content h1 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 2.5em;
   font-family: 'Raleway', sans-serif;
 }
 #intro hr {
@@ -50,17 +57,23 @@ body {
   margin-bottom: 60px;
 }
 #intro .header-content .animated-typing {
-  font-size: 26px;
+  font-size: 1.4em;
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Raleway', sans-serif;
   display: inline;
+}
+#intro #animated-typing-wrapper{
+  display: inline-block;
+  min-height: 130px;
 }
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-  font-size: 24px;
+  font-size: 1.4em;
+  position: relative;
+  top: -2px;
 }
 @keyframes blink {
   0% {
@@ -99,9 +112,38 @@ body {
   display: block;
   margin: auto;
   border: 2px solid #59a5d8;
-  margin-top: 9%;
+  margin-top: 5%;
   padding: 10px 20px;
   background-color: transparent;
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
+}
+
+/* Extra small devices (phones, up to 480px) */
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* tablets/desktops and up ----------- */
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    font-size: 22px;
+  }
 }

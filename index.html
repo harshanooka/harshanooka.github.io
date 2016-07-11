@@ -66,7 +66,10 @@
         <div id="typed-strings">
           <p class="animated-typing">Experienced web developer with expertise in both the <br />front-end (Bootstrap, AngularJS, jQuery) and back-end (Node.js, ASP.NET, J2EE)</p>
         </div>
-        <span class="animated-typing typed"> </span>
+        <div id="animated-typing-wrapper">
+          <span class="animated-typing typed"> </span>
+        </div>
+
 
         <button class="btn-download">Download Resume</button>
       </div>
@@ -81,7 +84,7 @@
     $(".typed").typed({
       // strings:["Expertise in front-end responsive web designs <br /> (Bootstrap, AngularJS, jQuery) and back-end (Node.js, ASP.NET, J2EE)"],
       stringsElement : $("#typed-strings"),
-      typeSpeed: 10,
+      typeSpeed: 0,
       startDelay: 1000
     });
   });
