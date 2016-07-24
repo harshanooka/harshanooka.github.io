@@ -1,16 +1,23 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
 body {
   margin: 0px 0px;
-  width: 100%;
-  height: 100%;
   font-size: 18px
+}
+ul{
+  list-style: none;
 }
 .navbar-custom {
   margin: 0px 0px;
   background-color: white;
   height: 50px;
   text-transform: uppercase;
-  border-bottom: #59A5D8 3px solid;
-}
+    box-shadow: 0px 2px 3px #59A5D8;
+  }
 .navbar-custom li a {
   color: grey;
   font-size: 0.9em;
@@ -26,16 +33,20 @@ body {
   background-color: black;
 }
 #intro {
-  position: absolute;
-  top: 50px;
   background: rgba(0, 0, 0, 0.7) url('../images/hero2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   min-height: 100%;
 }
+.affix-top{
+  visibility: hidden;
+}
+.affix{
+  visibility: visible;
+}
 #intro .header-content-wrap {
-  margin-top: 50px;
+  padding: 50px 0px;
   width: 100%;
 }
 #intro .header-content {
@@ -50,11 +61,12 @@ body {
   font-size: 2.5em;
   font-family: 'Raleway', sans-serif;
 }
-#intro hr {
+#intro hr ,#skills hr{
   width: 10%;
   border: 1px solid #59a5d8;
   color: black;
   margin-bottom: 60px;
+  margin-top: 0px;
 }
 #intro .header-content .animated-typing {
   font-size: 1.4em;
@@ -62,7 +74,7 @@ body {
   font-family: 'Raleway', sans-serif;
   display: inline;
 }
-#intro #animated-typing-wrapper{
+#intro #animated-typing-wrapper {
   display: inline-block;
   min-height: 130px;
 }
@@ -108,17 +120,62 @@ body {
     opacity: 1;
   }
 }
-.btn-download {
+.gh-btn-wrapper{
   display: block;
-  margin: auto;
-  border: 2px solid #59a5d8;
-  margin-top: 5%;
-  padding: 10px 20px;
+}
+.gh-btn{
   background-color: transparent;
-  font-size: 20px;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  border: 2px solid #59a5d8;
+  padding: 10px 20px;
+}
+.gh-btn:hover{
+  background-color: white;
+  color: black;
+}
+.gh-btn-download {
+  margin: auto;
+  margin-top: 5%;
+}
+.gh-btn-know{
+  margin-left: 10%;
 }
 
+
+.section-title{
+font-size: 3em;
+line-height: 78px;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 0px;
+}
+.subsection-title{
+  color: grey;
+}
+#skills .fa-3x{
+   color: #59a5d8;
+}
+
+.skills-wrap ul{
+  margin-top: 35px;
+}
+.skills-wrap ul li{
+  text-align: left
+}
+.skillbar-title{
+  padding: 5px 5px;
+  font-size: 0.9em;
+}
+.skillbar{
+  margin: 5px 5px;
+}
+#skills .progress{
+  height: 15px;
+}
+#skills .progress-bar{
+  background-color: #33658A;
+}
 /* Extra small devices (phones, up to 480px) */
 
 @media screen and (max-width: 767px) {
