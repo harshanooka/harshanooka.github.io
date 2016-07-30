@@ -89,7 +89,7 @@
 
   <section id="skills" class="container-fluid">
     <div class="row">
-      <div >
+      <div>
         <h1 class="section-title">My Stack</h1>
         <hr />
 
@@ -261,17 +261,154 @@
       </div>
     </div>
   </section>
+
+
+  <section id="portfolio" class="container-fluid">
+    <div class="row">
+      <div >
+        <h1 class="section-title">Portfolio</h1>
+        <hr />
+
+        <div class="work-tiles-wrapper">
+          <article class="work-tile col-sm-4">
+            <img class="thumbnail" src="public/images/leadership.png" data-toggle="modal" data-target="#leadershipModal" data-backdrop="true" data-keyboard="true" />
+
+            <div id="leadershipModal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Leadership academy</h2>
+                    <a href="https://github.com/harshanooka/The-Leadership-Academy" target="_blank" class="modal-top-icons"  data-toggle="tooltip" data-placement="top" title="See code"><i class="fa fa-github " ></i></a>
+                    <a href="http://theleadershipacademy.us/" target="_blank" class="modal-top-icons"  data-toggle="tooltip" data-placement="top" title="Open Website"><i class="fa fa-reply " ></i></a>
+
+                  </div>
+                  <div class="modal-body">
+                    <img src="public/images/leadership.png" class="modal-work-pic"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+          <article class="work-tile col-sm-4">
+            <img class="thumbnail" src="public/images/limber.png" data-toggle="modal" data-target="#limberModal" data-backdrop="true" data-keyboard="true"/>
+
+            <div id="limberModal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Limber - Story Management tool</h2>
+                    <a href="https://github.com/stackroute/frAgile" target="_blank" class="modal-top-icons"  data-toggle="tooltip" data-placement="top" title="See code"><i class="fa fa-github " ></i></a>
+                    <a href="http://limber.stackroute.in/" target="_blank" class="modal-top-icons"  data-toggle="tooltip" data-placement="top" title="Open Website"><i class="fa fa-reply " ></i></a>
+
+                  </div>
+                  <div class="modal-body">
+                    <img src="public/images/limber.png" class="modal-work-pic"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+          <article class="work-tile col-sm-4">
+            <img class="thumbnail" src="public/images/movieflix.png" data-toggle="modal" data-target="#movieflixModal" data-backdrop="true" data-keyboard="true" />
+
+            <div id="movieflixModal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Movieflix</h2>
+                    <a href="https://github.com/harshanooka/movieflix" target="_blank" class="modal-top-icons"  data-toggle="tooltip" data-placement="top" title="See code"><i class="fa fa-github " ></i></a>
+
+                  </div>
+                  <div class="modal-body">
+                    <img src="public/images/movieflix.png" class="modal-work-pic"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+          <article class="work-tile col-sm-4">
+            <img class="thumbnail" src="public/images/pulse.png" data-toggle="modal" data-target="#pulseModal" data-backdrop="true" data-keyboard="true" />
+
+            <div id="pulseModal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Pulse-GIMS Compliance Dashboard</h2>
+
+                  </div>
+                  <div class="modal-body">
+                    <img src="public/images/pulse.png" class="modal-work-pic"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+          <article class="work-tile col-sm-4">
+            <img class="thumbnail" src="public/images/agriculture.png" data-toggle="modal" data-target="#agricultureModal" data-backdrop="true" data-keyboard="true" />
+
+            <div id="agricultureModal" class="modal fade">
+              <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Agriculture Charts using D3.js</h2>
+                    <a href="https://github.com/gowthamhosur/Agriculture-Charts" target="_blank" class="modal-top-icons"  data-toggle="tooltip" data-placement="top" title="See code"><i class="fa fa-github " ></i></a>
+
+                  </div>
+                  <div class="modal-body">
+                    <img src="public/images/agriculture.png" class="modal-work-pic"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 <script>
   $(function() {
-
     $(".typed").typed({
       stringsElement: $("#typed-strings"),
       typeSpeed: 10,
       startDelay: 1000
     });
   });
+
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
 </script>
 
 </html>

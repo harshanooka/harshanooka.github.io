@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
@@ -8,16 +7,20 @@ body {
   margin: 0px 0px;
   font-size: 18px
 }
-ul{
+ul {
   list-style: none;
+}
+
+.modal-body{
+  padding: 0px;
 }
 .navbar-custom {
   margin: 0px 0px;
   background-color: white;
   height: 50px;
   text-transform: uppercase;
-    box-shadow: 0px 2px 3px #59A5D8;
-  }
+  box-shadow: 0px 2px 3px #59A5D8;
+}
 .navbar-custom li a {
   color: grey;
   font-size: 0.9em;
@@ -39,12 +42,13 @@ ul{
   width: 100%;
   min-height: 100%;
 }
-.affix-top{
+.affix-top {
   visibility: hidden;
 }
-.affix{
+.affix {
   visibility: visible;
 }
+
 #intro .header-content-wrap {
   padding: 50px 0px;
   width: 100%;
@@ -61,7 +65,7 @@ ul{
   font-size: 2.5em;
   font-family: 'Raleway', sans-serif;
 }
-#intro hr ,#skills hr{
+#intro hr, #skills hr, #portfolio hr {
   width: 10%;
   border: 1px solid #59a5d8;
   color: black;
@@ -120,17 +124,17 @@ ul{
     opacity: 1;
   }
 }
-.gh-btn-wrapper{
+.gh-btn-wrapper {
   display: block;
 }
-.gh-btn{
+.gh-btn {
   background-color: transparent;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
   border: 2px solid #59a5d8;
   padding: 10px 20px;
 }
-.gh-btn:hover{
+.gh-btn:hover {
   background-color: white;
   color: black;
 }
@@ -138,43 +142,65 @@ ul{
   margin: auto;
   margin-top: 5%;
 }
-.gh-btn-know{
+.gh-btn-know {
   margin-left: 10%;
 }
-
-
-.section-title{
-font-size: 3em;
-line-height: 78px;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 0px;
+.section-title {
+  font-size: 3em;
+  line-height: 78px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0px;
 }
-.subsection-title{
+.subsection-title {
   color: grey;
 }
-#skills .fa-3x{
-   color: #59a5d8;
+#skills .fa-3x {
+  color: #59a5d8;
 }
-
-.skills-wrap ul{
+.skills-wrap ul {
   margin-top: 35px;
 }
-.skills-wrap ul li{
+.skills-wrap ul li {
   text-align: left
 }
-.skillbar-title{
+.skillbar-title {
   padding: 5px 5px;
   font-size: 0.9em;
 }
-.skillbar{
+.skillbar {
   margin: 5px 5px;
 }
-#skills .progress{
+#skills .progress {
   height: 15px;
 }
-#skills .progress-bar{
+#skills .progress-bar {
   background-color: #33658A;
+}
+
+#portfolio{
+  background-color: #33658a;
+}
+#portfolio .section-title{
+  color: white;
+}
+#portfolio .work-tile img{
+  width: 100%;
+  cursor: pointer;
+}
+
+#portfolio .modal-title{
+  float: left;
+}
+.modal-top-icons{
+float: right;
+}
+
+.modal-top-icons,.modal-top-icons:hover{
+  font-size: 30px;
+  padding: 0px 10px;
+  color: black;
+  cursor: pointer;
 }
 /* Extra small devices (phones, up to 480px) */
 
