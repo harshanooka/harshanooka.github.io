@@ -282,12 +282,12 @@ ul {
   width: 30%;
 }
 .testimonials-content {
-  float: right;
   padding: 30px 30px;
   color: white;
   font-size: 1.2em;
   text-align: justify;
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-left: 18%;
 }
 #contact .form-control {
   display: block;
